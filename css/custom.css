@@ -1,0 +1,417 @@
+/* Reset Styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Arial;
+  color: #222222;
+}
+
+/* Navigation Styling */
+/* Nav gets gay at 823 pxs */
+.navbar{
+  padding: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand{
+  text-align: center;
+  font-style: italic;
+}
+
+.navbar-nav li{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-item{
+  margin: auto;
+  width: 100px;
+}
+
+.nav-link{
+  font-size: 18px !important;
+  text-align: center;
+  width: 100%;
+}
+
+.active{
+  border-bottom: 3px solid #888888;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid #888888;
+}
+
+/* Carousel Styling For Home Page */
+.carousel-inner img{
+  height: 900px;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top:50%;
+  width: 50%;
+  margin-top: 50px;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.carousel-caption p{
+  width: 50%;
+}
+
+/* Jumbotron for the rest of the pages */
+.jumbotron{
+  background-image: url(../images/handMassage_BW.jpg);
+  background-size: cover;
+  /* height: 800px; */
+}
+
+/* Intro Section */
+.intro{
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+  width: 50%;
+}
+
+.intro p{
+  color:white;
+}
+/* Horizontal Line Styling */
+hr{
+  border: 1px solid black;
+}
+
+/* Main Content Styling*/
+.index-contain{
+  height: 750px;
+  padding-top: 150px;
+}
+
+.index-Title{
+  font-weight: bold;
+  font-size: 60px;
+  color: #2E75B6;
+}
+
+.index-list ul li{
+  text-align: left;
+  font-size: 18px;
+  padding: 10px;
+}
+/* Podcast Section */
+.podcast-button{
+  background-color: #2F5597;
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.podcast-button:hover {
+  background-color: #203864;
+  cursor: pointer;
+}
+
+.podcast-button:active{
+  background-color: #203864;
+  border: 1px double #203864;
+}
+
+/* Transcript Section */
+.transcript{
+  border-radius: 5px;
+  /* border: 1px #203864; */
+  background-color: #F2F2F2;
+  border-style: double;
+  display: none;
+  margin: auto;
+  text-align: left;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.transcript h2{
+  text-align: center;
+}
+
+/* Footer Styling */
+footer{
+  height: 100px;
+  padding: 25px;
+  background-color: #BFBFBF;
+}
+
+.bottom-nav li{
+  text-decoration: none;
+  display:inline;
+}
+
+.bottom-nav a{
+  color: black;
+  padding: 5px 30px;
+}
+
+
+/* FAQ Page Card Styling */
+.contain-card{
+  margin: auto;
+  height: 620px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.cards{
+  width: 30%;
+}
+
+.three-card-one{
+  margin-left: 10px;
+}
+
+.three-card-two{
+  margin-left: 10px;
+}
+
+.three-card-three{
+  margin-left: 10px;
+}
+
+.two-cards-one{
+  margin-right: 210px;
+}
+
+.two-cards-two{
+  margin-left: 25px; 
+}
+
+.flip-card{
+  background-color: transparent;
+  width: 350px;
+  height: 135px;
+  perspective: 1000px;
+  color: white;
+}
+
+.flip-card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-content {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #525252;
+  color: white;
+  border-radius: 10px;
+}
+
+.flip-card-front h4{
+  padding: 20px 10px 10px 10px;
+}
+
+.flip-card-back {
+  background-color: #525252;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.flip-card-back p{
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.three-row{
+  margin: 40px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.two-row{
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+
+/* Local and International Page */
+.row-list{
+  margin: 300px 0;
+  height: 350px;
+  position: relative;
+}
+
+.local{
+  padding-right: 75px;
+  padding-left: 0;
+}
+
+.local:before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  height: 65%;
+  width: 100%;
+  border-right: 2px solid black;
+}
+
+.local h2{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #2E75B6;
+}
+
+.local-list{
+  padding-left: 30px;
+}
+
+.intern{
+  padding-left: 70px;
+  padding-right: 0;
+}
+
+.intern h2{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #2E75B6;
+}
+
+.intern-list{
+  padding-left: 40px;
+}
+
+/* Video seciton of Impact */
+.video-sec{
+  margin-bottom: 50px;
+}
+
+.video-sec h2{
+  font-size: 60px;
+  font-weight: bold;
+  color: #2E75B6;
+}
+
+/* Screen size adjustments */
+@media screen and (max-width: 767px){
+  .local:before{
+    border-right:none;
+  }
+
+  .local{
+    padding: 0; 
+  }
+
+  .intern{
+    padding: 0;
+  }
+
+  .cards{
+    margin: 10px 0;
+  }
+
+  .contain-card{
+    height: 1040px;
+  }
+
+  .nav-link{
+    width: 20%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 1199px){
+
+  .three-card-one{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .three-card-two{
+    margin-left: 45px;
+  }
+
+  .three-card-three{
+    margin-left: 100px;
+  }
+
+  .contain-card{
+    margin-left: 10px;
+  }
+
+}
+
+@media screen and (max-width: 991px){
+
+  .cards{
+    margin: 10px auto;
+    text-align: center;
+
+  }
+
+  .three-card-one{
+    padding-left: 15px;
+  }
+
+  .contain-card{
+    height: 1000px;
+  }
+
+  .three-row{
+    margin-bottom: 0;
+  }
+
+  .two-row{
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 676px){
+
+  .cards{
+    margin-left: 10px;
+  }
+
+}
+
+
+/* Contact Page Icons */
+
+/* Contact Styling */
+.contactFormat {
+  margin: auto;
+  padding: 300px 50px 50px 50px;
+  height: 1000px;
+}
+
+/* contact Icon styling */
+.contact-icon{
+  padding: 50px 20px 20px 20px;
+  transition: transform .4s;
+}
+
+.contact-icon:hover{
+  transform: scale(1.7);
+}
